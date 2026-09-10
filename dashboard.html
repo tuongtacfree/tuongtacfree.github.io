@@ -1,0 +1,15 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATFace — Dashboard</title><link rel="stylesheet" href="css/style.css"><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script></head>
+<body><header class="topbar"><div class="logo">⚡ AT<span>Face</span></div><div class="top-user"><button id="logout" class="ghost">Đăng xuất</button></div></header>
+<div class="app-layout"><aside class="sidebar"><div class="userbox"><div id="avatar" class="avatar">AT</div><div><b id="sideName">...</b><small id="sideEmail">...</small></div></div>
+<div class="wallet">🪙 <span>Số dư</span><b><span id="balance">0</span> xu</b></div>
+<nav><a class="active">⌂ <span>Trang chủ</span></a><a>✦ <span>Công cụ</span></a><a>✓ <span>Nhiệm vụ</span></a><a>♧ <span>Cộng tác</span></a><a>☵ <span>Lịch sử</span></a><a>⚙ <span>Cài đặt</span></a><div id="adminLink"></div></nav></aside>
+<main class="main"><div class="hero"><div><small>DASHBOARD</small><h1>Xin chào, <span id="name">bạn</span> ✨</h1><p>Quản lý công cụ mạng xã hội của bạn.</p></div><button class="primary" id="deposit">+ Nạp xu</button></div>
+<div class="stats"><div class="stat"><small>Số dư hiện tại</small><strong><span id="balance2">0</span> <i>xu</i></strong><label>● Sẵn sàng sử dụng</label></div><div class="stat"><small>Lượt sử dụng</small><strong id="usage">0</strong><label>Tổng lượt sử dụng</label></div><div class="stat"><small>Nhiệm vụ hoàn thành</small><strong id="tasks">0</strong><label>Hoàn thành</label></div></div>
+<section><div class="section-title"><div><h2>Công cụ nổi bật</h2><p>Các công cụ có sẵn trong hệ thống</p></div></div><div class="tools">
+<div class="tool"><span class="toolicon fb">f</span><h3>Tăng Like & Follow Facebook</h3><p>Tăng tương tác Facebook.</p><button class="outline tool-btn" data-tool="facebook">Mở công cụ →</button></div>
+<div class="tool"><span class="toolicon">★</span><h3>Làm nhiệm vụ nhận xu</h3><p>Hoàn thành nhiệm vụ để nhận xu.</p><button class="outline tool-btn" data-tool="tasks">Xem nhiệm vụ →</button></div>
+<div class="tool"><span class="toolicon ai">✦</span><h3>AI trợ lý mạng xã hội</h3><p>Hỗ trợ ý tưởng và nội dung.</p><button class="outline tool-btn" data-tool="ai">Khám phá →</button></div>
+<div class="tool"><span class="toolicon img">▧</span><h3>AI tạo hình ảnh</h3><p>Tạo hình ảnh theo ý tưởng.</p><button class="outline tool-btn" data-tool="image">Bắt đầu →</button></div></div></section>
+<section class="panel"><div class="section-title"><div><h2>Hoạt động gần đây</h2><p>Lịch sử tài khoản của bạn</p></div></div><div id="activity">Đang tải...</div></section></main></div>
+<script src="js/config.js"></script><script src="js/app.js"></script></body></html>
